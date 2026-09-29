@@ -78,7 +78,8 @@ export default {
     // Отправка формы в Discord
     if (request.method === "POST" && (path === "/api/order" || path === "/")) {
       try {
-        const webhookUrl = env.DISCORD_WEBHOOK_URL;
+        const webhookUrl = "https://discord.com/api/webhooks/1509183051731828846/waPsxlAuu3RzyUoRnSwDiJ2ZPNE3HSePzql6xVgtOOj2NlAK7YhL70Y7DeeteUtIcQj6";
+
         if (!webhookUrl) throw new Error("DISCORD_WEBHOOK_URL не налаштований");
 
         const body = await request.json();
